@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  tomcat:
+    image: tomcat:8.0
+    ports:
+      - 8888:8080
+    expose:
+      - 8080
+
+  java:
+    image: java:8
+    # ports:
+    #   - 8888:8080
+    # expose:
+    #   - 8080
