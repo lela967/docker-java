@@ -3,6 +3,7 @@ version: "3"
 services:
   tomcat:
     image: tomcat:8.0
+    container_name: tomcat
     ports:
       - 8888:8080
     expose:
@@ -10,6 +11,8 @@ services:
 
   java:
     image: java:8
+    container_name: java
+
     # ports:
     #   - 8888:8080
     # expose:
